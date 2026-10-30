@@ -1,0 +1,38 @@
+{
+  "version": "0.4",
+  "title": "HIREF Message From Head",
+  "type": "page",
+  "content": [
+    {
+      "id": "mfh01",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": { "unit": "px", "top": "60", "right": "0", "bottom": "60", "left": "0", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "mfh01c",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "mfh01w",
+              "elType": "widget",
+              "widgetType": "hiref_message_head",
+              "settings": {
+                "name": "Prof. Dr. Mazlan Abdul Wahid",
+                "position": "Head of Research Group, HIREF UTM",
+                "message": "<p>Welcome to the High Speed Reacting Flow Laboratory (HIREF) at Universiti Teknologi Malaysia.</p><p>Our research group is dedicated to advancing the frontiers of combustion science, thermofluids, and supersonic reacting flow research. We strive to contribute to sustainable energy solutions through cutting-edge experimental and computational research.</p><p>We invite you to explore our work, collaborate with us, and join our mission to push the boundaries of thermofluid science.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "hide_title": "yes",
+    "elementor_page_title_selector": "h1.entry-title"
+  }
+}

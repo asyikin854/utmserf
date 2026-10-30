@@ -1,0 +1,52 @@
+{
+  "version": "0.4",
+  "title": "HIREF Background, Vision & Mission",
+  "type": "page",
+  "content": [
+    {
+      "id": "bvm01",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": { "unit": "px", "top": "60", "right": "0", "bottom": "60", "left": "0", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "bvm01c",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "bvm01w",
+              "elType": "widget",
+              "widgetType": "hiref_background_vision",
+              "settings": {
+                "bg_heading": "Background",
+                "bg_content": "<p>HIREF was established to pursue fundamental and applied research in combustion, thermofluids, and high-speed reacting flows. Our group brings together expertise from mechanical engineering, aerospace, and energy science to address some of the most pressing challenges in sustainable energy and propulsion.</p><p>Over the years, we have built state-of-the-art experimental facilities and computational capabilities, fostered international collaborations, and produced high-impact publications and patents.</p>",
+                "vision_heading": "Vision",
+                "vision_content": "To be a world-class research group in thermofluids and reacting flow, contributing to sustainable energy solutions.",
+                "mission_heading": "Mission",
+                "mission_items": [
+                  { "_id": "m1", "item": "Conduct cutting-edge research in combustion and thermofluids." },
+                  { "_id": "m2", "item": "Develop state-of-the-art experimental platforms for reacting flow studies." },
+                  { "_id": "m3", "item": "Foster international collaborations and partnerships." },
+                  { "_id": "m4", "item": "Train and mentor the next generation of researchers." }
+                ],
+                "obj_heading": "Objectives",
+                "objective_items": [
+                  { "_id": "o1", "item": "Publish high-impact research in indexed international journals." },
+                  { "_id": "o2", "item": "Secure competitive research grants at national and international levels." },
+                  { "_id": "o3", "item": "Translate research findings into patents and commercial applications." }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "hide_title": "yes",
+    "elementor_page_title_selector": "h1.entry-title"
+  }
+}

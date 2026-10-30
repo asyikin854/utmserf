@@ -1,0 +1,38 @@
+{
+  "version": "0.4",
+  "title": "HIREF Academic Staff",
+  "type": "page",
+  "content": [
+    {
+      "id": "as01",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": { "unit": "px", "top": "60", "right": "0", "bottom": "60", "left": "0", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "as01c",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "as01w",
+              "elType": "widget",
+              "widgetType": "hiref_academic_staff",
+              "settings": {
+                "use_cpt": "yes",
+                "section_label": "Organization Structure",
+                "heading": "Academic Staff"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "hide_title": "yes",
+    "elementor_page_title_selector": "h1.entry-title"
+  }
+}

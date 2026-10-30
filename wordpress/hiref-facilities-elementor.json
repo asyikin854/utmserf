@@ -1,0 +1,38 @@
+{
+  "version": "0.4",
+  "title": "HIREF Facilities",
+  "type": "page",
+  "content": [
+    {
+      "id": "fa01",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": { "unit": "px", "top": "60", "right": "0", "bottom": "60", "left": "0", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "fa01c",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "fa01w",
+              "elType": "widget",
+              "widgetType": "hiref_facilities",
+              "settings": {
+                "use_cpt": "yes",
+                "section_label": "Lab Infrastructure",
+                "heading": "HiREF Facilities"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "hide_title": "yes",
+    "elementor_page_title_selector": "h1.entry-title"
+  }
+}

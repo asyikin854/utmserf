@@ -1,0 +1,39 @@
+{
+  "version": "0.4",
+  "title": "HIREF Services",
+  "type": "page",
+  "content": [
+    {
+      "id": "sv01",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": { "unit": "px", "top": "60", "right": "0", "bottom": "60", "left": "0", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "sv01c",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "sv01w",
+              "elType": "widget",
+              "widgetType": "hiref_services",
+              "settings": {
+                "use_cpt": "yes",
+                "section_label": "What We Offer",
+                "heading": "HiREF Services",
+                "intro": "Our laboratory offers a range of testing, analysis, and consultancy services to industry and academia."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "hide_title": "yes",
+    "elementor_page_title_selector": "h1.entry-title"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "version": "0.4",
+  "title": "HIREF Meet Our Expert",
+  "type": "page",
+  "content": [
+    {
+      "id": "ex01",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": { "unit": "px", "top": "60", "right": "0", "bottom": "60", "left": "0", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "ex01c",
+          "elType": "column",
+          "settings": { "_column_size": 100 },
+          "elements": [
+            {
+              "id": "ex01w",
+              "elType": "widget",
+              "widgetType": "hiref_experts",
+              "settings": {
+                "section_label": "Our Expert",
+                "heading": "Meet Our Expert",
+                "experts": [
+                  { "_id": "e1", "name": "Prof. Dr. Mazlan Abdul Wahid", "position": "Professor, Head of HIREF", "expertise": "Turbulent Combustion, Flame Dynamics, High Speed Reacting Flow", "bio": "Professor in the Department of Thermofluid, Faculty of Engineering, School of Mechanical Engineering. PhD from State University of New York, Buffalo, USA.", "google_scholar": { "url": "https://scholar.google.com", "is_external": true, "nofollow": false } },
+                  { "_id": "e2", "name": "Assoc. Prof. Ts. Dr Mohd Fairus Mohd Yasin", "position": "Senior Lecturer", "expertise": "Reacting Flow Modelling, Heat Transfer, OpenFOAM CFD", "bio": "Senior lecturer in the Department of Thermofluid. PhD from the University of Cambridge, United Kingdom in 2014.", "google_scholar": { "url": "https://scholar.google.com", "is_external": true, "nofollow": false } },
+                  { "_id": "e3", "name": "Assoc. Prof. Madya Dr. Aminuddin Saat", "position": "Senior Lecturer", "expertise": "Combustion and Flame Studies, Optical Diagnostics", "bio": "Senior lecturer in the School of Mechanical Engineering. PhD from the University of Leeds, UK.", "google_scholar": { "url": "https://scholar.google.com", "is_external": true, "nofollow": false } },
+                  { "_id": "e4", "name": "Dr Natrah Kamaruzaman", "position": "Senior Lecturer", "expertise": "Micro Cooling, Heat Transfer, Fluid Dynamics", "bio": "Senior lecturer. Bachelor from University of the Ryukyus, Japan; Master and PhD from UTM.", "google_scholar": { "url": "https://scholar.google.com", "is_external": true, "nofollow": false } },
+                  { "_id": "e5", "name": "Dr Mohsin Mohd Sies", "position": "Senior Lecturer", "expertise": "High-speed Combustion, Detonation Waves, Chemical Kinetics", "bio": "Senior lecturer. Bachelor from Rensselaer Polytechnic Institute; Master from University of Michigan; PhD from UTM.", "google_scholar": { "url": "https://scholar.google.com", "is_external": true, "nofollow": false } },
+                  { "_id": "e6", "name": "Dr Norikhwan Hamzah", "position": "Senior Lecturer", "expertise": "Nanomaterial Synthesis, Combustion Processes", "bio": "Senior lecturer. Bachelor from University of Wisconsin; MSc from Cranfield University; PhD from UTM.", "google_scholar": { "url": "https://scholar.google.com", "is_external": true, "nofollow": false } },
+                  { "_id": "e7", "name": "Ir Dr Norazila Othman", "position": "Senior Lecturer", "expertise": "Biodiesel, Microgas Turbines, Biomass Gasification", "bio": "Senior lecturer. PhD from Tokyo Metropolitan University, Japan (2016).", "google_scholar": { "url": "https://scholar.google.com", "is_external": true, "nofollow": false } },
+                  { "_id": "e8", "name": "Dr Mohd Faizal Hasan", "position": "Senior Lecturer", "expertise": "Biomass Densification, Torrefaction, Gasification", "bio": "PhD from Keio University, Japan. Research on Pd/Ag purification membrane for fuel cell applications.", "google_scholar": { "url": "https://scholar.google.com", "is_external": true, "nofollow": false } }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "hide_title": "yes",
+    "elementor_page_title_selector": "h1.entry-title"
+  }
+}

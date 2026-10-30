@@ -1,0 +1,516 @@
+{
+  "version": "0.4",
+  "title": "HIREF Homepage",
+  "type": "page",
+  "content": [
+    {
+      "id": "hiref01",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "overflow": "hidden"
+      },
+      "elements": [
+        {
+          "id": "hiref01c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "hiref01w",
+              "elType": "widget",
+              "widgetType": "hiref_hero",
+              "settings": {
+                "slides": [
+                  {
+                    "_id": "s1",
+                    "tag": "Research Mission",
+                    "headline": "Global Leader in\nResource Sustainability",
+                    "sub": "Advancing turbulence and thermochemical models across combustion, heat transfer, and supersonic reacting flows.",
+                    "cta_text": "Explore Research",
+                    "cta_link": {
+                      "url": "#research",
+                      "is_external": false,
+                      "nofollow": false
+                    }
+                  },
+                  {
+                    "_id": "s2",
+                    "tag": "Universiti Teknologi Malaysia",
+                    "headline": "World-Ranked\nResearch University",
+                    "sub": "HIREF is proudly part of UTM \u2014 a globally recognised research university advancing science and engineering.",
+                    "cta_text": "Explore Research",
+                    "cta_link": {
+                      "url": "#research",
+                      "is_external": false,
+                      "nofollow": false
+                    }
+                  },
+                  {
+                    "_id": "s3",
+                    "tag": "High Speed Flow",
+                    "headline": "High Speed\nReacting Flow Lab",
+                    "sub": "State-of-the-art platforms for supersonic shock wave investigations and hypersonic propulsion at UTM's HIREF.",
+                    "cta_text": "Explore Research",
+                    "cta_link": {
+                      "url": "#research",
+                      "is_external": false,
+                      "nofollow": false
+                    }
+                  }
+                ],
+                "interval": 6000
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hiref02",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "hiref02c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "hiref02w",
+              "elType": "widget",
+              "widgetType": "hiref_stats",
+              "settings": {
+                "stats": [
+                  {
+                    "_id": "st1",
+                    "value": "120+",
+                    "label": "Indexed Publications"
+                  },
+                  {
+                    "_id": "st2",
+                    "value": "2,400+",
+                    "label": "Total Citations"
+                  },
+                  {
+                    "_id": "st3",
+                    "value": "8",
+                    "label": "Patents Granted"
+                  },
+                  {
+                    "_id": "st4",
+                    "value": "25+",
+                    "label": "Master Postgraduate"
+                  },
+                  {
+                    "_id": "st5",
+                    "value": "15+",
+                    "label": "PhD Postgraduate"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hiref03",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "hiref03c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "hiref03w",
+              "elType": "widget",
+              "widgetType": "hiref_about",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hiref04",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "hiref04c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "hiref04w",
+              "elType": "widget",
+              "widgetType": "hiref_research",
+              "settings": {
+                "section_label": "What We Do",
+                "heading": "Research Areas",
+                "source": "default",
+                "areas": [
+                  {
+                    "_id": "r1",
+                    "title": "Combustion",
+                    "color": "orange",
+                    "desc": "Fundamental and applied research in turbulent combustion, flame dynamics, and thermochemical modelling for clean energy applications."
+                  },
+                  {
+                    "_id": "r2",
+                    "title": "Heat Transfer",
+                    "color": "amber",
+                    "desc": "Advanced heat transfer studies including convection, radiation, and coupled thermal-fluid interactions in engineering systems."
+                  },
+                  {
+                    "_id": "r3",
+                    "title": "Microscale Reacting Flow",
+                    "color": "sky",
+                    "desc": "Miniaturised combustion systems and microfluidic reacting flows for next-generation energy and chemical processing technologies."
+                  },
+                  {
+                    "_id": "r4",
+                    "title": "Supersonic Combustion",
+                    "color": "blue",
+                    "desc": "State-of-the-art experimental platforms for supersonic shock wave investigations and hypersonic propulsion research."
+                  },
+                  {
+                    "_id": "r5",
+                    "title": "Flame-based Nanomaterials",
+                    "color": "teal",
+                    "desc": "Synthesis of functional nanomaterials via flame processes, leveraging high-temperature reacting flows for material engineering."
+                  },
+                  {
+                    "_id": "r6",
+                    "title": "Thermofluids",
+                    "color": "slate",
+                    "desc": "Multidisciplinary thermofluid research encompassing gas turbine combustion, sustainable energy, and reacting flow modelling."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hiref05",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "hiref05c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "hiref05w",
+              "elType": "widget",
+              "widgetType": "hiref_news",
+              "settings": {
+                "count": 3,
+                "all_link": {
+                  "url": "/news/",
+                  "is_external": false,
+                  "nofollow": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hiref06",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "hiref06c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "hiref06w",
+              "elType": "widget",
+              "widgetType": "hiref_events",
+              "settings": {
+                "source": "manual",
+                "events": [
+                  {
+                    "_id": "e1",
+                    "name": "11th International Conference on Combustion, Incineration, Pyrolysis and Climate Change",
+                    "abbr": "i-CIPEC 2024",
+                    "dates": "18 \u2013 20 December 2024",
+                    "location": "Kuala Lumpur, Malaysia",
+                    "status": "upcoming"
+                  },
+                  {
+                    "_id": "e2",
+                    "name": "13th International Meeting on Advances in Thermofluid",
+                    "abbr": "IMAT 2024",
+                    "dates": "18 \u2013 19 December 2024",
+                    "location": "Kuala Lumpur, Malaysia",
+                    "status": "upcoming"
+                  },
+                  {
+                    "_id": "e3",
+                    "name": "12th International Meeting on Advances in Thermofluids",
+                    "abbr": "IMAT 2021",
+                    "dates": "1 November 2021",
+                    "location": "Virtual",
+                    "status": "ended"
+                  },
+                  {
+                    "_id": "e4",
+                    "name": "9th International Meeting on Advances in Thermofluids",
+                    "abbr": "IMAT 2017",
+                    "dates": "25 January 2017",
+                    "location": "Malaysia",
+                    "status": "ended"
+                  },
+                  {
+                    "_id": "e5",
+                    "name": "7th International Meeting on Advances in Thermofluids",
+                    "abbr": "IMAT 2014",
+                    "dates": "26 \u2013 27 November 2014",
+                    "location": "Malaysia",
+                    "status": "ended"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hiref07",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "hiref07c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "hiref07w",
+              "elType": "widget",
+              "widgetType": "hiref_collaborations",
+              "settings": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hiref08",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "hiref08c",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "hiref08w",
+              "elType": "widget",
+              "widgetType": "hiref_contact",
+              "settings": {
+                "phone1": "Prof Dr Mazlan: +607 555 7036",
+                "phone2": "Dr Mohd Fairus: +607 553 4574",
+                "email": "hirefofficial@gmail.com",
+                "address": "HiREF, Block E06, Faculty of Mechanical Engineering\nUniversiti Teknologi Malaysia\n81310 Skudai, Johor",
+                "linkedin": {
+                  "url": "https://lnkd.in/gahnE2W9",
+                  "is_external": true,
+                  "nofollow": false
+                },
+                "facebook": {
+                  "url": "http://facebook.com/profile.php?id=100084659865225",
+                  "is_external": true,
+                  "nofollow": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "hide_title": "yes",
+    "elementor_page_title_selector": "h1.entry-title"
+  }
+}
