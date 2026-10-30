@@ -154,7 +154,7 @@ export default function PublicationPage({ onNavigate }: Props) {
                         <BookOpen size={16} className="text-orange-500" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <p className="text-sm text-gray-700 leading-relaxed">{pub.citation}</p>
+                        <p className="text-sm text-gray-700 leading-relaxed [overflow-wrap:anywhere]">{pub.citation}</p>
                         <div className="flex flex-wrap gap-1.5 mt-2">
                           {pub.authors.map(a => {
                             const expert = EXPERTS.find(e =>

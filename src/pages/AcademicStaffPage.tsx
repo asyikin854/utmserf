@@ -9,7 +9,28 @@ function StaffTable({ title, rows }: { title: string; rows: typeof ACADEMIC_STAF
   return (
     <div className="mb-12">
       <h3 className="text-lg font-bold text-orange-500 mb-4 pb-2 border-b border-orange-100">{title}</h3>
-      <div className="overflow-x-auto rounded-xl border border-gray-100 shadow-sm">
+      <div className="md:hidden space-y-3">
+        {rows.map((s, i) => (
+          <div key={i} className="rounded-xl border border-gray-100 bg-white p-4 shadow-sm">
+            <p className="font-semibold text-gray-900">{s.name}</p>
+            <p className="text-gray-500 text-sm mb-3">{s.role}</p>
+            <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+              <a href={`mailto:${s.email}`} className="inline-flex items-center gap-1.5 text-orange-500 hover:text-orange-600 break-all">
+                <Mail size={13} className="shrink-0" /> {s.email}
+              </a>
+              <a
+                href={`https://utmscholar.utm.my/Scholar/ScholarInfoDetails/${s.profileId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-gray-400 hover:text-orange-500 text-xs font-medium"
+              >
+                UTM Scholar <ExternalLink size={11} />
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="hidden md:block overflow-x-auto rounded-xl border border-gray-100 shadow-sm">
         <table className="w-full text-sm">
           <thead>
             <tr className="bg-gray-50 border-b border-gray-100">

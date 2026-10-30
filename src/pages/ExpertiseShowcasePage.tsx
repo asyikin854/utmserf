@@ -44,7 +44,7 @@ export default function ExpertiseShowcasePage({ onNavigate }: Props) {
                   <span className="text-[10px] bg-orange-50 text-orange-600 border border-orange-200 px-2.5 py-1 rounded-full font-bold">Upcoming</span>
                 </div>
                 <h4 className="text-gray-700 font-semibold text-sm leading-snug mb-4 group-hover:text-gray-900 transition-colors">{ev.name}</h4>
-                <div className="flex items-center gap-5 text-xs text-gray-400">
+                <div className="flex flex-wrap items-center gap-x-5 gap-y-1 text-xs text-gray-400">
                   <span className="flex items-center gap-1.5"><Award size={11} /> {ev.dates}</span>
                   <span className="flex items-center gap-1.5"><MapPin size={11} /> {ev.location}</span>
                 </div>
@@ -74,13 +74,13 @@ export default function ExpertiseShowcasePage({ onNavigate }: Props) {
                 href="https://events.utm.my/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex items-start justify-between gap-4 py-4 ${i < pastEvents.length - 1 ? 'border-b border-gray-100' : ''} group hover:bg-gray-50 -mx-2 px-2 rounded transition-colors`}
+                className={`flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-4 py-4 ${i < pastEvents.length - 1 ? 'border-b border-gray-100' : ''} group hover:bg-gray-50 -mx-2 px-2 rounded transition-colors`}
               >
-                <div className="flex items-start gap-4 min-w-0">
-                  <span className="text-gray-300 font-black text-xs tracking-widest uppercase pt-0.5 w-20 shrink-0">{ev.abbr}</span>
+                <div className="flex items-start gap-3 sm:gap-4 min-w-0">
+                  <span className="text-gray-300 font-black text-xs tracking-widest uppercase pt-0.5 w-16 sm:w-20 shrink-0">{ev.abbr}</span>
                   <p className="text-gray-600 text-sm leading-snug group-hover:text-gray-900 transition-colors">{ev.name}</p>
                 </div>
-                <div className="flex items-center gap-2 shrink-0">
+                <div className="flex items-center gap-2 shrink-0 pl-[76px] sm:pl-0">
                   <span className="text-gray-400 text-xs whitespace-nowrap">{ev.dates}</span>
                   <span className="text-[10px] bg-gray-100 text-gray-400 px-2 py-0.5 rounded-full font-medium">Ended</span>
                 </div>

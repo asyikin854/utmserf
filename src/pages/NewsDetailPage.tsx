@@ -49,7 +49,7 @@ export default function NewsDetailPage({ slug, onNavigate, onOpenNews }: Props) 
         </div>
 
         {item.body.length > 0 && (
-          <div className="space-y-5 text-gray-600 text-[15px] leading-relaxed">
+          <div className="space-y-5 text-gray-600 text-[15px] leading-relaxed [overflow-wrap:anywhere]">
             {item.body.map((p, i) => <p key={i} className="whitespace-pre-line">{p}</p>)}
           </div>
         )}

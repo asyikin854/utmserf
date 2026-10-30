@@ -47,7 +47,14 @@ export default function HomePage({ onNavigate, onOpenNews }: HomePageProps) {
   const collabTimer = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const COLLAB_TABS: CollabCategory[] = ['Industry', 'National', 'International', 'Academic', 'Government'];
-  const CARDS_VISIBLE = 4;
+  // Fewer partner cards side by side on smaller screens
+  const visibleFor = (w: number) => (w < 640 ? 2 : w < 1024 ? 3 : 4);
+  const [CARDS_VISIBLE, setCardsVisible] = useState(() => visibleFor(window.innerWidth));
+  useEffect(() => {
+    const onResize = () => setCardsVisible(visibleFor(window.innerWidth));
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
 
   useEffect(() => {
     setCollabOffset(0);
@@ -376,13 +383,13 @@ export default function HomePage({ onNavigate, onOpenNews }: HomePageProps) {
                   <div className="mx-10 overflow-hidden">
                     <div
                       className="flex gap-4 transition-transform duration-500 ease-in-out"
-                      style={{ transform: `translateX(calc(-${collabOffset * (100 / CARDS_VISIBLE)}%))` }}
+                      style={{ transform: `translateX(calc(-${collabOffset} * (${100 / CARDS_VISIBLE}% + ${16 / CARDS_VISIBLE}px)))` }}
                     >
                       {doubled.map((item, i) => (
                         <div
                           key={`${item.abbr}-${i}`}
                           className="flex-shrink-0 border border-gray-800 rounded-xl p-5 hover:border-orange-500/40 hover:bg-white/[0.03] transition-all group flex flex-col items-center text-center gap-3"
-                          style={{ width: `calc(${100 / CARDS_VISIBLE}% - ${(3 * 16) / CARDS_VISIBLE}px)` }}
+                          style={{ width: `calc(${100 / CARDS_VISIBLE}% - ${((CARDS_VISIBLE - 1) * 16) / CARDS_VISIBLE}px)` }}
                         >
                           <div className="w-full h-16 flex items-center justify-center bg-white rounded-lg px-3">
                             <img

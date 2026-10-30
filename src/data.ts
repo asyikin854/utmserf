@@ -144,7 +144,7 @@ export const NEWS: NewsItem[] = [
     tag: 'Publication',
     title: 'Congratulations Ir. Dr. Mohammad Nurizat Rahman on his Recent Publication',
     desc: 'Celebrating the latest indexed publication from our research group, advancing the frontiers of thermofluid science.',
-    img: './news/stock-lab.jpg',
+    img: './research-activities/syngas-2.jpg',
     body: ['Celebrating the latest indexed publication from our research group, advancing the frontiers of thermofluid science.'],
   },
   {
@@ -153,7 +153,7 @@ export const NEWS: NewsItem[] = [
     tag: 'Welcome',
     title: 'Welcome to HIREF — Muhammed Zakariya Bin Hasnol Joins as PhD Candidate',
     desc: 'Muhammed Zakariya is pursuing his PhD under the guidance of Dr. Mohd Fairus Mohd Yasin. We wish him all the best.',
-    img: './news/stock-meeting.jpg',
+    img: './fairus-research/figure-3.png',
     body: ['Muhammed Zakariya is pursuing his PhD under the guidance of Dr. Mohd Fairus Mohd Yasin. We wish him all the best.'],
   },
   {
@@ -162,7 +162,7 @@ export const NEWS: NewsItem[] = [
     tag: 'Event',
     title: 'UTM Hosts Business Lunch on Sustainable Combustion for Cleaner Energy in Malaysia',
     desc: 'The Sustainable Combustion Showcase, hosted by UTM\'s SERF Research Group, brought together key industrial players in the energy sector.',
-    img: './news/stock-boardroom.jpg',
+    img: './research-activities/combustion-1.jpeg',
     body: ['The Sustainable Combustion Showcase, hosted by UTM\'s SERF Research Group, brought together key industrial players in the energy sector.'],
   },
   {

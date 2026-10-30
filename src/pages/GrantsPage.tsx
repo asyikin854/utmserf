@@ -15,7 +15,19 @@ export default function GrantsPage({ onNavigate }: Props) {
       <div className="mb-14">
         <span className="text-orange-500 text-xs font-bold tracking-[0.2em] uppercase mb-3 block">Funding</span>
         <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-6">Current & Recent Grants</h2>
-        <div className="overflow-x-auto rounded-xl border border-gray-100 shadow-sm">
+        <div className="md:hidden space-y-3">
+          {CURRENT_GRANTS.map((g, i) => (
+            <div key={i} className="rounded-xl border border-gray-100 bg-white p-4 shadow-sm">
+              <div className="flex items-start justify-between gap-3 mb-2">
+                <span className="font-bold text-orange-600 text-sm">{g.scheme}</span>
+                <span className="text-gray-700 text-sm font-semibold whitespace-nowrap">{g.budget}</span>
+              </div>
+              <p className="text-gray-700 text-sm leading-snug mb-2">{g.title}</p>
+              <p className="text-gray-400 text-xs">PI: {g.pi}</p>
+            </div>
+          ))}
+        </div>
+        <div className="hidden md:block overflow-x-auto rounded-xl border border-gray-100 shadow-sm">
           <table className="w-full text-sm">
             <thead>
               <tr className="bg-gray-50 border-b border-gray-100">
@@ -41,7 +53,16 @@ export default function GrantsPage({ onNavigate }: Props) {
       {/* Historical grants */}
       <div>
         <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-6">Historical Grants</h2>
-        <div className="overflow-x-auto rounded-xl border border-gray-100 shadow-sm">
+        <div className="md:hidden space-y-3">
+          {HISTORICAL_GRANTS.map((g, i) => (
+            <div key={i} className="rounded-xl border border-gray-100 bg-white p-4 shadow-sm">
+              <span className="block font-bold text-gray-600 text-sm mb-2">{g.scheme}</span>
+              <p className="text-gray-700 text-sm leading-snug mb-2">{g.title}</p>
+              <p className="text-gray-400 text-xs">{g.period} · {g.funder}</p>
+            </div>
+          ))}
+        </div>
+        <div className="hidden md:block overflow-x-auto rounded-xl border border-gray-100 shadow-sm">
           <table className="w-full text-sm">
             <thead>
               <tr className="bg-gray-50 border-b border-gray-100">
