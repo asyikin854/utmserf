@@ -13,6 +13,7 @@ export type Page =
   | 'research-fairus'
   | 'research-norikhwan'
   | 'news'
+  | 'news-detail'
   | 'services'
   | 'vacancy'
   | 'training'

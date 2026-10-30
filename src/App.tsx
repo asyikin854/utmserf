@@ -15,6 +15,7 @@ import ZamriResearchPage from './pages/ZamriResearchPage';
 import FairusResearchPage from './pages/FairusResearchPage';
 import NorikhwanResearchPage from './pages/NorikhwanResearchPage';
 import NewsPage from './pages/NewsPage';
+import NewsDetailPage from './pages/NewsDetailPage';
 import ServicesPage from './pages/ServicesPage';
 import VacancyPage from './pages/VacancyPage';
 import TrainingPage from './pages/TrainingPage';
@@ -24,6 +25,7 @@ import ExpertiseShowcasePage from './pages/ExpertiseShowcasePage';
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
   const [scrolled, setScrolled] = useState(false);
+  const [newsSlug, setNewsSlug] = useState<string | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -36,6 +38,11 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const openNews = (slug: string) => {
+    setNewsSlug(slug);
+    handleNavigate('news-detail');
+  };
+
   const props = { onNavigate: handleNavigate };
 
   return (
@@ -43,7 +50,7 @@ export default function App() {
       <Header scrolled={scrolled} currentPage={currentPage} onNavigate={handleNavigate} />
 
       <main className={currentPage !== 'home' ? 'pt-20 sm:pt-24 lg:pt-28' : ''}>
-        {currentPage === 'home' && <HomePage {...props} />}
+        {currentPage === 'home' && <HomePage {...props} onOpenNews={openNews} />}
         {currentPage === 'message-from-head' && <MessageFromHeadPage {...props} />}
         {currentPage === 'background-vision-mission' && <BackgroundVisionMissionPage {...props} />}
         {currentPage === 'academic-staff' && <AcademicStaffPage {...props} />}
@@ -56,7 +63,8 @@ export default function App() {
         {currentPage === 'research-zamri' && <ZamriResearchPage {...props} />}
         {currentPage === 'research-fairus' && <FairusResearchPage {...props} />}
         {currentPage === 'research-norikhwan' && <NorikhwanResearchPage {...props} />}
-        {currentPage === 'news' && <NewsPage {...props} />}
+        {currentPage === 'news' && <NewsPage {...props} onOpenNews={openNews} />}
+        {currentPage === 'news-detail' && newsSlug && <NewsDetailPage key={newsSlug} slug={newsSlug} {...props} onOpenNews={openNews} />}
         {currentPage === 'services' && <ServicesPage {...props} />}
         {currentPage === 'vacancy' && <VacancyPage {...props} />}
         {currentPage === 'training' && <TrainingPage {...props} />}

@@ -2,10 +2,11 @@ import { useState, useEffect, useRef } from 'react';
 import { ArrowRight, FlameKindling, MapPin, Mail, ExternalLink, Users, ChevronLeft, ChevronRight } from 'lucide-react';
 import type { Page } from '../types';
 import { STATS, NEWS, COLLABORATIONS } from '../data';
-import type { CollabCategory, NewsItem } from '../data';
+import type { CollabCategory } from '../data';
 
 interface HomePageProps {
   onNavigate: (p: Page) => void;
+  onOpenNews: (slug: string) => void;
 }
 
 const HERO_SLIDES = [
@@ -37,18 +38,13 @@ const FEATURE_CARDS = [
   },
 ];
 
-export default function HomePage({ onNavigate }: HomePageProps) {
+export default function HomePage({ onNavigate, onOpenNews }: HomePageProps) {
   const [slideIndex, setSlideIndex] = useState(0);
   const [slideVisible, setSlideVisible] = useState(true);
   const [collabTab, setCollabTab] = useState<CollabCategory>('Industry');
   const [collabOffset, setCollabOffset] = useState(0);
   const slideTimer = useRef<ReturnType<typeof setInterval> | null>(null);
   const collabTimer = useRef<ReturnType<typeof setInterval> | null>(null);
-
-  const openNews = (item: NewsItem) => {
-    if (item.url) window.open(item.url, '_blank', 'noopener,noreferrer');
-    else onNavigate('news');
-  };
 
   const COLLAB_TABS: CollabCategory[] = ['Industry', 'National', 'International', 'Academic', 'Government'];
   const CARDS_VISIBLE = 4;
@@ -176,7 +172,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           <div className="grid lg:grid-cols-[1fr_380px] gap-4">
             {/* Featured large card */}
             {NEWS[0] && (
-              <div onClick={() => openNews(NEWS[0])} className="relative rounded-xl overflow-hidden group cursor-pointer h-[360px] lg:h-auto lg:min-h-[480px]">
+              <div onClick={() => onOpenNews(NEWS[0].slug)} className="relative rounded-xl overflow-hidden group cursor-pointer h-[360px] lg:h-auto lg:min-h-[480px]">
                 <img
                   src={NEWS[0].img}
                   alt={NEWS[0].title}
@@ -198,7 +194,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             {/* Stacked smaller cards */}
             <div className="flex flex-col gap-4">
               {NEWS.slice(1, 4).map(item => (
-                <div key={item.title} onClick={() => openNews(item)} className="flex gap-4 bg-[#1a1a1a] rounded-xl overflow-hidden group cursor-pointer hover:bg-[#222] transition-colors">
+                <div key={item.title} onClick={() => onOpenNews(item.slug)} className="flex gap-4 bg-[#1a1a1a] rounded-xl overflow-hidden group cursor-pointer hover:bg-[#222] transition-colors">
                   <div className="w-28 h-28 shrink-0 overflow-hidden">
                     <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>

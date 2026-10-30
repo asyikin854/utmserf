@@ -1,12 +1,15 @@
 import { useMemo, useState } from 'react';
-import { ArrowUpRight, Newspaper } from 'lucide-react';
+import { ArrowRight, Newspaper } from 'lucide-react';
 import type { Page } from '../types';
 import PageLayout from '../components/PageLayout';
 import { NEWS } from '../data';
 
-interface Props { onNavigate: (p: Page) => void; }
+interface Props {
+  onNavigate: (p: Page) => void;
+  onOpenNews: (slug: string) => void;
+}
 
-export default function NewsPage({ onNavigate }: Props) {
+export default function NewsPage({ onNavigate, onOpenNews }: Props) {
   const [tag, setTag] = useState<string | null>(null);
   const tags = useMemo(() => Array.from(new Set(NEWS.map(n => n.tag))).sort(), []);
   const items = tag ? NEWS.filter(n => n.tag === tag) : NEWS;
@@ -48,13 +51,11 @@ export default function NewsPage({ onNavigate }: Props) {
       </div>
 
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map(item => {
-          const Card = item.url ? 'a' : 'div';
-          return (
-            <Card
-              key={item.title}
-              {...(item.url ? { href: item.url, target: '_blank', rel: 'noopener noreferrer' } : {})}
-              className="group flex flex-col bg-white border border-gray-100 rounded-2xl overflow-hidden hover:border-orange-200 hover:shadow-lg transition-all"
+        {items.map(item => (
+            <button
+              key={item.slug}
+              onClick={() => onOpenNews(item.slug)}
+              className="group flex flex-col text-left bg-white border border-gray-100 rounded-2xl overflow-hidden hover:border-orange-200 hover:shadow-lg transition-all"
             >
               <div className="aspect-[16/9] bg-gray-100 overflow-hidden">
                 <img
@@ -73,15 +74,12 @@ export default function NewsPage({ onNavigate }: Props) {
                 </div>
                 <h3 className="font-black text-gray-900 leading-snug mb-2 group-hover:text-orange-600 transition-colors">{item.title}</h3>
                 {item.desc && <p className="text-gray-500 text-sm leading-relaxed line-clamp-3">{item.desc}</p>}
-                {item.url && (
-                  <span className="mt-auto pt-4 inline-flex items-center gap-1 text-orange-500 text-xs font-bold">
-                    Read on HiREF website <ArrowUpRight size={12} />
-                  </span>
-                )}
+                <span className="mt-auto pt-4 inline-flex items-center gap-1 text-orange-500 text-xs font-bold">
+                  Read more <ArrowRight size={12} className="group-hover:translate-x-0.5 transition-transform" />
+                </span>
               </div>
-            </Card>
-          );
-        })}
+            </button>
+        ))}
       </div>
 
       {items.length === 0 && (
